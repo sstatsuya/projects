@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Luong Minh Tien-Projects</title>
+     <link rel="shortcut icon" href="./Assets/Img/logo.png" type="image/x-icon">
+     <link rel="stylesheet" href="./Assets/fontawesome-free-5.15.4-web/css/all.min.css">
+     <link rel="stylesheet" href="./style.css">
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+	$(document).ready(function(){
+	  $("#header__search-input").on("keyup", function() {
+	    var value = $(this).val().toLowerCase();
+	    $("#youtube__content-list li").filter(function() {
+	      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+	    });
+	  });
+	});
+</script>
+ <body>
+     <div class='wrapper'>
+        <div class="youtube">
+            <div class="youtube__header">
+                <a href="#" class='header__logo'>
+                    <img src='./Assets/Img/youtube-logo.png'/>
+                </a>
+                <div class="header__search">
+                    <input id="header__search-input" type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                    <span class="header__search-btn">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="header__option">
+                    <span class="header__option-btn">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="header__option-btn">
+                        <i class="fas fa-th"></i>
+                    </span>
+                    <span class="header__option-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="youtube__tag">
+                <ul class="youtube__tag-list">
+                    <li class="youtube__tag-item active">Tất cả</li>
+                    <li class="youtube__tag-item">Âm nhạc</li>
+                    <li class="youtube__tag-item">Thể thao</li>
+                    <li class="youtube__tag-item">Du lịch</li>
+                    <li class="youtube__tag-item">Hài kịch tình huống</li>
+                    <li class="youtube__tag-item">Danh sách kết hợp</li>
+                </ul>
+                <span class="youtube__tag-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </div>
+            <div class="youtube__nav">
+                <div class="nav__open">
+                    <i class="fas fa-bars nav__open-icon"></i>
+                </div>
+                <ul class="youtube__nav-list">
+                    <li class="youtube__nav-item">
+                        <div class="youtube__nav-item-content">
+                            <i class="fas fa-home"></i>
+                            <span class="youtube__nav-item-txt">Trang chủ</span>
+                        </div>
+                    </li>
+                    <li class="youtube__nav-item">
+                        <div class="youtube__nav-item-content">
+                            <i class="far fa-compass"></i>
+                            <span class="youtube__nav-item-txt">Thịnh hành</span>
+                        </div>
+                    </li>
+                    <li class="youtube__nav-item">
+                        <div class="youtube__nav-item-content">
+                            <i class="far fa-list-alt"></i>
+                            <span class="youtube__nav-item-txt">Kênh đăng ký</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="youtube__content">
+                <ul id="youtube__content-list" class="youtube__content-list">
+                    <li class="youtube__content-item">
+                        <a href="https://github.com/sstatsuya/AppBachHoaXanh" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/appmarket.gif" class='youtube__content-item-img youtube__content-item-gif'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Ứng dụng đi chợ online</span>
+                                <span class="youtube__content-item-desc">React Native, MongoDB, Java, Herokuapp</span>
+                                <span class="youtube__content-item-time">100 lượt xem &bull; 01-05-2022</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://github.com/sstatsuya/GiuaKyAndroid" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/app-quanlydonhang.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Ứng dụng quản lý đơn hàng</span>
+                                <span class="youtube__content-item-desc">Java Android, SQLite</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 19-10-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/genshin/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-genshin.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Genshin impact chacracters</span>
+                                <span class="youtube__content-item-desc">Reactjs</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 19-10-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/zing-mp3/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-zingmp3.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Zing mp3 - Trình nghe nhạc chất lượng miễn phí</span>
+                                <span class="youtube__content-item-desc">HTML, CSS, Javascript</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 19-10-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/luxstay/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-luxstay.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Luxstay - Đặt phòng homestay nhanh chóng, trải nghiệm hạng sang tại Luxstay</span>
+                                <span class="youtube__content-item-desc">HTML, CSS, Js, Responsive</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 16-08-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://youtu.be/C0fdpb9AE58" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-cars.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Cars.com - Mua bán xe chất lượng, đảm bảo uy tín</span>
+                                <span class="youtube__content-item-desc">Java Spring MVC, MS SQL, HTML, CSS, Javascript</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 01-04-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/shopee/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-shopee.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Shopee - Gì cũng có</span>
+                                <span class="youtube__content-item-desc">HTML, CSS, Responsive</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 10-09-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/the-band/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-theband.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">The band - W3School</span>
+                                <span class="youtube__content-item-desc">HTML, CSS, Responsive</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 02-08-2021</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="youtube__content-item">
+                        <a href="https://sstatsuya.github.io/figure/" class="youtube__content-item-link" target="__blank">
+                            <img src="Assets/Img/web-figure.png" class='youtube__content-item-img'>
+                            <div class="youtube__content-item-txt">
+                                <span class="youtube__content-item-title">Shop bán đồ figure uy tín</span>
+                                <span class="youtube__content-item-desc">HTML, CSS</span>
+                                <span class="youtube__content-item-time">1 lượt xem &bull; 13-09-2020</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </body>
+ </html>
